@@ -1,128 +1,103 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SodaMC Survival</title>
+    <meta charset="UTF-8">
+    <title>SoDaMC - Minecraft Vietnam Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #fff;
-            background: url('https://i.imgur.com/3L2b4pB.jpeg') center/cover no-repeat fixed;
+            background-image: url('https://wallpapercave.com/wp/wp2757874.jpg'); /* Background Minecraft */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 2px 2px 5px black;
         }
 
-        /* lớp mờ */
-        .blur-bg {
-            backdrop-filter: blur(4px) brightness(0.6);
+        .overlay {
+            background: rgba(0,0,0,0.55);
             min-height: 100vh;
-            padding: 0;
-            margin: 0;
+            padding: 40px 20px;
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 40px;
-            background: rgba(0,0,0,0.4);
-        }
-
-        nav a {
-            color: #aee6ff;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .hero {
+        h1 {
+            font-size: 55px;
             text-align: center;
-            padding: 120px 20px;
+            margin-bottom: 10px;
         }
 
-        .hero h1 {
-            font-size: 70px;
-            margin: 0;
-            text-shadow: 0 0 20px #000;
+        h2 {
+            text-align: center;
+            margin-top: -10px;
+            font-weight: normal;
+            opacity: .85;
         }
 
-        .hero p {
-            font-size: 22px;
-            margin-top: 10px;
+        .box {
+            max-width: 700px;
+            margin: auto;
+            background: rgba(0,0,0,0.5);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 40px;
         }
 
         .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 35px;
+            display: block;
+            width: 260px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #2ecc71;
+            text-align: center;
             font-size: 20px;
-            background: #00d0ff;
-            color: #000;
+            font-weight: bold;
             border-radius: 10px;
             text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 0 15px #00d0ff88;
+            color: black;
         }
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 50px 20px;
+        .btn:hover {
+            background: #27ae60;
         }
 
-        .section-title {
-            font-size: 38px;
-            margin-bottom: 25px;
-            color: #00d0ff;
-            text-shadow: 0 0 10px #000;
-        }
-
-        .card {
-            background: rgba(0,0,0,0.45);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: .7;
         }
     </style>
 </head>
+
 <body>
-<div class="blur-bg">
+    <div class="overlay">
+        <h1>SoDaMC VN</h1>
+        <h2>Survival | Economy | Rank | Sự kiện mỗi tuần</h2>
 
-<nav>
-    <div class="logo"><b>SodaMC Survival</b></div>
-    <div>
-        <a href="#join">Tham gia</a>
-        <a href="#news">Tin tức</a>
-        <a href="#event">Sự kiện</a>
+        <a class="btn" href="#">📌 IP: sodamc.vn</a>
+
+        <div class="box">
+            <h2>🎮 Giới thiệu server</h2>
+            <p>SoDaMC là server Minecraft Việt Nam thân thiện, mượt, không pay-to-win, cập nhật liên tục, có sự kiện hàng tuần và hệ thống rank – economy hoàn chỉnh.</p>
+        </div>
+
+        <div class="box">
+            <h2>⚡ Thông tin</h2>
+            <p>Phiên bản: 1.20.1<br>
+            Hỗ trợ Bedrock<br>
+            Online 24/7 – Anti-lag</p>
+        </div>
+
+        <div class="box">
+            <h2>📅 Sự kiện tuần</h2>
+            <p>- Đua top người chơi<br>
+            - Săn boss ban đêm<br>
+            - Sự kiện mùa (Season Event)</p>
+        </div>
+
+        <footer>© 2025 SoDaMC VN</footer>
     </div>
-</nav>
-
-<section class="hero">
-    <h1>SURVIVAL</h1>
-    <p>Trải nghiệm thế giới sinh tồn đỉnh cao của SodaMC!</p>
-    <a class="btn" href="#join">Vào Server</a>
-</section>
-
-<section class="container" id="join">
-    <h2 class="section-title">🟩 Cách Tham Gia</h2>
-    <div class="card">
-        <p><b>IP:</b> sodamc.com<br>
-           <b>Phiên bản:</b> 1.16 – 1.21+<br>
-           <b>Chế độ:</b> Survival Economy, Guild, Jobs, Boss,…</p>
-    </div>
-</section>
-
-<section class="container" id="news">
-    <h2 class="section-title">📰 Tin Tức</h2>
-    <div class="card">Máy chủ sinh tồn chính thức mở cửa phiên bản mới!</div>
-    <div class="card">Thêm hệ thống Jobs, Guild, Boss mới cực hấp dẫn.</div>
-</section>
-
-<section class="container" id="event">
-    <h2 class="section-title">🔥 Sự Kiện Tháng</h2>
-    <div class="card">• Đua top Coins<br>• Đua top Playtime<br>• Săn Boss nhận quà VIP</div>
-</section>
-
-</div>
 </body>
 </html>
